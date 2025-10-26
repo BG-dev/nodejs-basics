@@ -15,7 +15,7 @@ const copy = async () => {
     });
   } catch (error) {
     if (error.code === "ENOENT" || error.code === "ERR_FS_CP_EEXIST") {
-      throw new Error("FS operation faile");
+      throw new Error("FS operation failed");
     }
   }
 };
